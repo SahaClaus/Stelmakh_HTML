@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача №1</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Домашнее задание "HTML"</h1>
+    <div class="form">
+        <form action="/registration.php" method="post">
+            <p><label for="userName">Имя:</label>
+                <input type="text" id="userName" name="userName" required/></p>
+
+
+            <p><label for="lastName">Фамилия:</label>
+                <input type="text" id="lastName" name="lastName" required/></p>
+
+
+            <p>Пол:
+                <label>М
+                    <input type="radio" value="М" name="myRadio" required></label>
+                <label>Ж
+                    <input type="radio" value="Ж" name="myRadio" required></label>
+            </p>
+
+            <p>Гражданство:
+                <select name="country" required>
+                    <option value="RUS">РФ</option>
+                    <option value="USA">США</option>
+                    <option value="CHN">КНР</option>
+                    <option value="ESP">Испания</option>
+                    <option value="DEU">ФРГ</option>
+                </select>
+            </p>
+
+
+            <p>Владение языками:
+                <select name="languages" multiple="multiple" size="2" required>
+                    <option value="ru">Русский</option>
+                    <option value="en">Английский</option>
+                    <option value="cn">Китайский</option>
+                    <option value="es">Испанский</option>
+                    <option value="de">Немецкий</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Адрес:
+                    <textarea name="address" cols="50" rows="5" required></textarea>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="agreement" required/>Согласие на получение информационных сообщений
+                </label>
+            </p>
+
+        <br>
+        <br>
+
+            <button type="submit">Отправить данные</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="ref"><a target="_blank" href="./page.html">Ссылка на вторую задачу</a></div>
+</body>
+</html>
